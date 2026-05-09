@@ -1,0 +1,163 @@
+#  Ethereum Basics------
+------------------------------------------------
+*What is Ethereum?
+Ethereum is a blockchain platform that allows developers to build:
+
+.Smart contracts
+.Decentralized applications (DApps)
+.Tokens
+.NFTs(non-fungible token)
+.DAOs(Decentralized Autonomus Organization)
+
+Ethereum introduced programmable blockchain functionality.
+
+* What is Ether (ETH)?
+ Ether is the native cryptocurrency of Ethereum.
+
+It is used for:
+
+Paying gas fees
+Sending value
+Interacting with smart contracts
+
+*What is a Smart Contract?
+A smart contract is code stored on the blockchain that executes automatically.
+
+Example:
+Send payment automatically after conditions are met.
+
+Smart contracts:
+
+.Cannot be easily changed
+.Run exactly as programmed
+.Are transparent
+
+*Written mainly in:
+Solidity
+
+*Ethereum Virtual Machine (EVM)
+
+The EVM is the runtime environment for smart contracts.
+
+It:
+.Executes Solidity code
+.Maintains blockchain state
+.Processes transactions
+
+
+# Accounts in Ethereum
+There are 2 types:
+
+1. Externally Owned Account (EOA)
+Controlled by private keys.
+
+Example:
+MetaMask wallet
+
+Can:
+.Send ETH
+.Call smart contracts
+
+2. Contract Account
+Controlled by smart contract code.
+
+Can:
+.Execute logic
+.Store data
+.Interact with other contracts
+
+# Public Key & Private Key
+*Private Key
+Secret number used to control wallet.
+
+.NEVER share it.
+
+*Public Key
+Generated from private key.
+
+*Wallet Address
+Generated from public key.
+
+Example:0x742d35Cc6634C0532925a3b844Bc454e4438f44e
+
+# What is Gas?
+Gas is the fee paid for executing operations on Ethereum.
+
+Every operation costs gas:
+.Storing data
+.Sending ETH
+.Calling functions
+
+Formula:
+Transaction Fee=Gas Used×Gas Price
+
+Example:
+
+Gas used = 21000
+Gas price = 20 Gwei
+
+# What are Nodes?
+Nodes are computers running Ethereum software.
+
+They:
+Store blockchain data
+Verify transactions
+Maintain network security
+
+Types:
+Full node
+Light node
+Archive node
+
+# Consensus Mechanism
+Consensus decides how blockchain agrees on valid transactions.
+
+Ethereum now uses:
+Proof of Stake (PoS)
+Validators stake ETH to secure the network.
+
+Earlier Ethereum used:
+Proof of Work (PoW)
+
+# What is Mining?
+Mining existed in Ethereum’s old PoW system.
+
+Miners:
+.Solved complex problems
+.Added blocks
+.Earned rewards
+
+Now Ethereum uses validators instead of miners.
+
+# Testnets--
+Testnets are practice blockchains using free ETH.
+
+Popular Ethereum testnets:
+
+.Sepolia
+.Holesky
+
+Use them for:
+.Testing contracts
+.Learning development
+
+# What is Remix IDE?
+
+Remix IDE
+ it is an online Solidity development environment.
+
+ can:
+.Write contracts
+.Compile
+.Deploy
+.Test smart contracts
+
+#Basic Ethereum Workflow--
+
+Write Solidity Code
+        ↓
+Compile Contract
+        ↓
+Deploy to Blockchain
+        ↓
+Interact Using Wallet

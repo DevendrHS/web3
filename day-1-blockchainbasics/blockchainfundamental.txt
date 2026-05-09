@@ -1,0 +1,52 @@
+# Blockchain fundamentals----
+----------------------------------------------------------------------------------------------
+* what is blockchain?
+ A blockchain is a distributed digital ledger that stores data in blocks connected together securely.
+
+# Each block contains:
+Data
+Timestamp
+Hash of current block
+Previous block hash
+
+Because every block is linked to the previous one, changing old data becomes extremely difficult.
+
+# simple structure of Blockchain:
+Block 1 ---> Block 2 ---> Block 3 ---> Block 4
+
+#Each block stores:
+
+.Transactions
+.Previous block hash
+.Its own hash
+
+*If someone changes Block 2:
+
+Hash changes
+Block 3 breaks
+Block 4 breaks
+
+That is why blockchain is considered tamper-resistant.
+
+*What is Hash?
+A hash is a unique fixed-length output generated from input data.
+Example:
+Input: Hello
+Hash: 185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969
+
+Properties:
+
+.Same input → same hash
+.Small change → completely different hash
+.One-way function
+
+#Ethereum mainly uses:
+Keccak-256 hashing
+
+#Centralized    vs          Decentralized Systems
+----------------------------------------------------------------------
+Centralized	                Decentralized
+One authority controls      data	Many nodes control data
+Easy to shut down	        Hard to shut down
+Single point of failure  	More secure
+Example: Banks           	Example: Ethereum
