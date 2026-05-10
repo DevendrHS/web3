@@ -1,6 +1,6 @@
 # Web3  Learning Journey---
 
-This repository contains my complete 4-week Web3, Blockchain, Smart Contract, React.js, Backend, AI, and Full-Stack DApp development learning journey during the internship program.
+This repository contains my complete 4-week Web3, Blockchain, Smart Contract, React.js, Backend, AI, and Full-Stack DApp development learning journey.
 
 ---
 
