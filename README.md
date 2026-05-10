@@ -1,4 +1,4 @@
-# This is a 
+
 
 # Day 1 - Blockchain Fundamentals & Ethereum Basics
 
