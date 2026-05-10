@@ -1,0 +1,40 @@
+DAY 2 NOTES — SmartContracts Basics---
+
+1. HelloWorld Smart Contract
+- Learned basic Solidity contract structure.
+- Used string state variable.
+- Implemented setMessage() and getMessage() functions.
+- Deployed contract on SCAI Mainnet using Remix IDE.
+
+2. Counter Smart Contract
+- Learned uint256 state variables.
+- Implemented increment and decrement functions.
+- Used require() for validation.
+- Learned contract state updates.
+
+3. SimpleStorage Smart Contract
+- Learned data storage on blockchain.
+- Implemented setter and getter functions.
+- Understood public variables and view functions.
+- Interacted with stored values after deployment.
+
+4. Ownable Smart Contract
+- Learned ownership pattern in Solidity.
+- Used constructor and msg.sender.
+- Implemented onlyOwner modifier.
+- Learned access control concepts.
+
+5. SendEther Smart Contract
+- Learned payable functions.
+- Understood Ether transfer between addresses.
+- Used receive() function to accept Ether.
+- Checked contract balance using address(this).balance.
+
+TOOLS USED
+- Solidity
+- Remix IDE
+- MetaMask
+- SCAI Mainnet
+
+LEARNING OUTCOME
+Learned Solidity basics, smart contract deployment, state variables, functions, modifiers, access control, and Ether transfer functionality on blockchain.
