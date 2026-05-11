@@ -30,6 +30,13 @@ DAY 2 NOTES — SmartContracts Basics---
 - Used receive() function to accept Ether.
 - Checked contract balance using address(this).balance.
 
+6. Ethereum Account & Ownership Smart Contract
+- Learned Ethereum account handling.
+- Used address data type and msg.sender.
+- Implemented ownership verification logic.
+- Learned constructor-based owner assignment.
+
+
 TOOLS USED
 - Solidity
 - Remix IDE

@@ -7,6 +7,7 @@
 3. SimpleStorage Smart Contract
 4. Ownable Smart Contract
 5. SendEther Smart Contract
+6. Ethereum Account & Ownership Smart Contract
 
 ---
 
@@ -56,3 +57,6 @@ Implement ownership and access control using modifiers.
 
 ## SendEther
 Transfer Ether and manage contract balance.
+
+## Ethereum Account & Ownership
+Manage contract ownership and verify Ethereum account addresses.
