@@ -1,0 +1,28 @@
+DAY 3 NOTES — REAL WORLD SMART CONTRACTS
+
+1. Student Registration Smart Contract
+- Learned struct implementation in Solidity.
+- Used mapping for storing student records.
+- Stored student details like name, age, course, class, and phone number.
+- Retrieved structured student data from blockchain.
+
+2. Simple Voting Smart Contract
+- Learned blockchain voting system logic.
+- Implemented candidate registration and vote counting.
+- Prevented duplicate voting using mapping(address => bool).
+- Used require() for validation and security.
+
+3. Internship Task Status Smart Contract
+- Learned blockchain-based task tracking.
+- Implemented task storage and task status updates.
+- Used struct and mapping for task management.
+- Retrieved internship task details from blockchain.
+
+TOOLS USED
+- Solidity
+- Remix IDE
+- MetaMask
+- SCAI Mainnet
+
+LEARNING OUTCOME
+Learned how to build real-world Solidity smart contracts using structs, mappings, validation logic, blockchain storage, voting systems, and task management concepts.
