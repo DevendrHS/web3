@@ -1,0 +1,32 @@
+DAY 4 NOTES — REACT FUNDAMENTALS
+
+1. Todo List App (React)
+- Learned React project setup using create-react-app.
+- Used functional components in React.
+- Implemented useState hook for task management.
+- Added task creation and deletion functionality.
+- Learned dynamic list rendering using map().
+
+2. Simple API Fetch Example (React)
+- Learned API integration in React.
+- Used fetch() method for API requests.
+- Implemented useEffect hook for data fetching.
+- Displayed dynamic API data in React UI.
+- Learned asynchronous data handling concepts.
+
+3. Component Reuse Example (React)
+- Learned reusable component architecture.
+- Passed data using props.
+- Created reusable UI components.
+- Improved code reusability and modular structure.
+- Practiced component-based React development.
+
+TOOLS USED
+- React.js
+- JavaScript
+- Node.js
+- VS Code
+- npm
+
+LEARNING OUTCOME
+Learned React fundamentals including components, props, hooks, state management, API fetching, event handling, reusable components, and dynamic UI rendering.
