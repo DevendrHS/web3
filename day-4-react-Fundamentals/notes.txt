@@ -1,11 +1,12 @@
 DAY 4 NOTES — REACT FUNDAMENTALS
 
-1. Todo List App (React)
-- Learned React project setup using create-react-app.
-- Used functional components in React.
-- Implemented useState hook for task management.
-- Added task creation and deletion functionality.
-- Learned dynamic list rendering using map().
+1. Learned React project setup using create-react-app.
+2. Implemented functional React components.
+3. Used useState hook for dynamic state management.
+4. Added task creation and deletion functionality.
+5. Practiced event handling using onClick and onChange.
+6. Learned dynamic list rendering using map().
+7. Used filter() for deleting tasks.
 
 2. Simple API Fetch Example (React)
 - Learned API integration in React.
