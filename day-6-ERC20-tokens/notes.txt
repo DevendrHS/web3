@@ -1,0 +1,99 @@
+==============================
+ERC20 TOKEN NOTES
+==============================
+
+1. Intern Reward Token (IRT)
+--------------------------------
+
+Purpose:
+Reward interns manually by admin/owner.
+
+Features:
+- ERC20 Token Standard
+- Owner Control
+- Manual Reward Distribution
+- Token Minting
+
+Concepts Learned:
+- OpenZeppelin ERC20
+- Ownable Contract
+- Mint Function
+- Solidity Inheritance
+
+Real-World Use:
+Used for internship rewards, bonuses, and achievements.
+
+Learning Outcome:
+Learned how to create a reward-based ERC20 token with owner-controlled minting functionality.
+
+
+2. Task Completion Token (TCT)
+--------------------------------
+
+Purpose:
+Reward users automatically after task completion.
+
+Features:
+- ERC20 Token Standard
+- Automatic Task Rewards
+- Task Tracking System
+- Mapping Usage
+
+Concepts Learned:
+- Mappings in Solidity
+- Automatic Token Rewards
+- Dynamic State Updates
+- ERC20 Token Logic
+
+Real-World Use:
+Used for rewarding completed internship tasks and assignments.
+
+Learning Outcome:
+Learned how to build an automated reward-based ERC20 token system using task completion tracking.
+
+
+3. Attendance Token (ATK)
+--------------------------------
+
+Purpose:
+Reward users for daily attendance.
+
+Features:
+- ERC20 Token Standard
+- Daily Attendance Reward
+- Timestamp Validation
+- One Reward Per Day
+
+Concepts Learned:
+- block.timestamp
+- Time-Based Validation
+- Daily Reward Logic
+- Attendance Tracking
+
+Real-World Use:
+Used for attendance rewards in internships, schools, or online programs.
+
+Learning Outcome:
+Learned how to implement time-based attendance reward systems using Solidity timestamps.
+
+
+
+Topics Covered:
+- ERC20 Token Standard
+- OpenZeppelin Contracts
+- Solidity Inheritance
+- Token Minting
+- Mapping
+- Ownership Control
+- Reward Logic
+- Smart Contract Deployment
+
+Tools Used:
+- Solidity
+- Remix IDE
+- MetaMask
+- OpenZeppelin
+- SCAI Mainnet
+
+Overall Outcome:
+Learned how to build real-world ERC20 token systems with different business logics including internship rewards, task completion rewards, and attendance-based rewards.
