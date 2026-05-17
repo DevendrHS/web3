@@ -1,69 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 
+import UserCard from "./components/UserCard";
+
 function App() {
-
-  const [users, setUsers] = useState([]);
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-
-    fetch("https://jsonplaceholder.typicode.com/users")
-
-      .then((response) => response.json())
-
-      .then((data) => {
-
-        setUsers(data);
-
-        setLoading(false);
-
-      });
-
-  }, []);
 
   return (
 
     <div className="container">
 
-      <h1>Simple API Fetch Example</h1>
+      <h1>Component Reuse Example</h1>
 
-      {
+      <div className="cardContainer">
 
-        loading ? (
+        <UserCard
+          name="Devendra"
+          role="Blockchain Developer"
+          experience="1 Year"
+        />
 
-          <p className="loading">
-            Loading Data...
-          </p>
+        <UserCard
+          name="Rahul"
+          role="Frontend Developer"
+          experience="2 Years"
+        />
 
-        ) : (
+        <UserCard
+          name="Ankit"
+          role="React Developer"
+          experience="Fresher"
+        />
 
-          <div className="cardContainer">
-
-            {
-
-              users.map((user) => (
-
-                <div className="card" key={user.id}>
-
-                  <h2>{user.name}</h2>
-
-                  <p>Email: {user.email}</p>
-
-                  <p>Website: {user.website}</p>
-
-                </div>
-
-              ))
-
-            }
-
-          </div>
-
-        )
-
-      }
+      </div>
 
     </div>
 
