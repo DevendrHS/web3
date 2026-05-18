@@ -1,0 +1,30 @@
+What is Node.js?
+
+Node.js allows JavaScript to run outside browser.
+
+Used for:
+
+backend development
+APIs
+servers
+Web3 backend services
+What is Express.js?
+
+Express.js is a Node.js framework.
+
+Used for:
+
+API creation
+routing
+backend architecture
+What is REST API?
+
+API allows frontend and backend communication.
+
+Example:
+
+Method	Purpose
+GET	Fetch data
+POST	Add data
+PUT	Update data
+DELETE	Remove data
