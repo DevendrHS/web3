@@ -1,0 +1,107 @@
+
+==============================
+DAY 7 — ERC721 NFT NOTES
+==============================
+
+1. Internship Certificate NFT
+--------------------------------
+
+Purpose:
+Issue blockchain-based internship certificates.
+
+Features:
+- NFT certificate minting
+- Unique token IDs
+- Ownership management
+
+Concepts Learned:
+- ERC721 Standard
+- NFT Minting
+- OpenZeppelin ERC721
+
+Learning Outcome:
+Learned how blockchain-based certificate NFTs work using ERC721 smart contracts.
+
+
+2. Course Completion NFT
+--------------------------------
+
+Purpose:
+Issue course completion certificates as NFTs.
+
+Features:
+- Course name storage
+- NFT ownership
+- Unique certificate NFTs
+
+Concepts Learned:
+- Solidity Mapping
+- NFT Metadata
+- ERC721 Development
+
+Learning Outcome:
+Learned how to store course-related metadata inside NFT smart contracts.
+
+
+3. Achievement Badge NFT
+--------------------------------
+
+Purpose:
+Issue achievement and milestone badges.
+
+Features:
+- Badge minting
+- Achievement level storage
+- NFT ownership system
+
+Concepts Learned:
+- NFT Badge Logic
+- Metadata Storage
+- ERC721 Token System
+
+Learning Outcome:
+Learned how NFTs can represent achievements and digital rewards.
+
+
+4. NFT Minting Contract
+--------------------------------
+
+Purpose:
+Create and mint NFTs with metadata URI storage.
+
+Features:
+- NFT minting
+- tokenURI storage
+- Metadata management
+
+Concepts Learned:
+- ERC721URIStorage
+- tokenURI
+- Metadata URI
+- NFT Ownership
+
+Learning Outcome:
+Learned how NFT metadata and URI storage work in ERC721 smart contracts.
+
+
+==============================
+OVERALL DAY 7 LEARNING
+==============================
+
+Topics Covered:
+- ERC721 NFT Standard
+- NFT Minting
+- Metadata Storage
+- tokenURI
+- Ownership Management
+- OpenZeppelin ERC721
+
+Tools Used:
+- Solidity
+- Remix IDE
+- MetaMask
+- OpenZeppelin
+- SCAI Mainnet
+
+Overall Outcome:
+Learned how to build and deploy real-world ERC721 NFT smart contracts including certificates, badges, and NFT minting systems.
