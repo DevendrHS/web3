@@ -18,6 +18,7 @@ contract CourseCompletionNFT is ERC721, Ownable {
     public
     onlyOwner
     {
+        
 
     _safeMint(to, nextTokenId);
     courseNames[nextTokenId] = _courseName;
