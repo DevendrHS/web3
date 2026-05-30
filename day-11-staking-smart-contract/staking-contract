@@ -50,4 +50,5 @@ contract StakingContract {
     {
         return address(this).balance;
     }
+    
 }
