@@ -1,0 +1,53 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract StakingContract {
+
+    mapping(address => uint256) public stakedAmount;
+    mapping(address => uint256) public stakingTime;
+
+    uint256 public rewardRate = 1; // 1% reward
+
+    // Stake ETH/SCAI
+    function stake() external payable {
+        require(msg.value > 0, "Amount must be greater than 0");
+
+        stakedAmount[msg.sender] += msg.value;
+        stakingTime[msg.sender] = block.timestamp;
+    }
+
+    // Calculate reward
+    function calculateReward(address user)
+        public
+        view
+        returns(uint256)
+    {
+        uint256 amount = stakedAmount[user];
+
+        return (amount * rewardRate) / 100;
+    }
+
+    // Withdraw stake + reward
+    function withdraw() external {
+
+        uint256 amount = stakedAmount[msg.sender];
+        require(amount > 0, "No stake found");
+
+        uint256 reward = calculateReward(msg.sender);
+
+        stakedAmount[msg.sender] = 0;
+
+        payable(msg.sender).transfer(
+            amount + reward
+        );
+    }
+
+    // Contract balance
+    function getContractBalance()
+        public
+        view
+        returns(uint256)
+    {
+        return address(this).balance;
+    }
+}
