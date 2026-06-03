@@ -12,46 +12,55 @@ function TokenBalance() {
 
   const getBalance = async () => {
 
-    const provider =
-      new ethers.BrowserProvider(
-        window.ethereum
+    try {
+
+      const provider =
+        new ethers.BrowserProvider(
+          window.ethereum
+        );
+
+      const accounts =
+        await window.ethereum.request({
+          method: "eth_accounts",
+        });
+
+      const contract =
+        new ethers.Contract(
+          CONTRACT_ADDRESS,
+          CONTRACT_ABI,
+          provider
+        );
+
+      const result =
+        await contract.balanceOf(
+          accounts[0]
+        );
+
+      setBalance(
+        ethers.formatUnits(
+          result,
+          18
+        )
       );
 
-    const contract =
-      new ethers.Contract(
-        CONTRACT_ADDRESS,
-        CONTRACT_ABI,
-        provider
-      );
+    } catch (error) {
 
-    const accounts =
-      await window.ethereum.request({
-        method: "eth_accounts",
-      });
+      console.log(error);
 
-    const result =
-      await contract.balanceOf(
-        accounts[0]
-      );
+    }
 
-    setBalance(
-      ethers.formatUnits(
-        result,
-        18
-      )
-    );
   };
 
   return (
     <div>
 
       <button onClick={getBalance}>
-        Check Balance
+        Check Token Balance
       </button>
 
-      <p>
+      <h3>
         Balance: {balance} IRT
-      </p>
+      </h3>
 
     </div>
   );
