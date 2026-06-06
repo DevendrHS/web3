@@ -1,0 +1,302 @@
+# System Architecture Design
+
+## Project Name
+
+Mini DEX (Decentralized Exchange)
+
+---
+
+# 1. System Overview
+
+The Mini DEX is a decentralized application (DApp) that enables users to swap ERC20 tokens and manage liquidity through blockchain smart contracts.
+
+The platform consists of three major layers:
+
+1. Frontend Layer
+2. Blockchain Layer
+3. Wallet Layer
+
+---
+
+# 2. System Architecture
+
+```
+                User
+                  |
+                  v
+            React Frontend
+                  |
+                  v
+              Ethers.js
+                  |
+                  v
+              MetaMask
+                  |
+                  v
+         MiniDEX Smart Contract
+                  |
+      -------------------------
+      |                       |
+      v                       v
+ DevToken (DVT)        RewardToken (RWT)
+```
+
+---
+
+# 3. Components
+
+## Frontend Layer
+
+Technology:
+
+* React.js
+* Ethers.js
+
+Responsibilities:
+
+* Wallet connection
+* Token swap interface
+* Liquidity management interface
+* Display reserves and balances
+
+---
+
+## Wallet Layer
+
+Technology:
+
+* MetaMask
+
+Responsibilities:
+
+* User authentication
+* Transaction signing
+* Blockchain interaction
+
+---
+
+## Smart Contract Layer
+
+Technology:
+
+* Solidity
+
+Contracts:
+
+1. DevToken.sol
+2. RewardToken.sol
+3. MiniDEX.sol
+
+Responsibilities:
+
+* Store liquidity
+* Execute swaps
+* Manage token transfers
+* Track reserves
+
+---
+
+# Smart Contract Logic
+
+## Contract 1: DevToken.sol
+
+Purpose:
+ERC20 Token A
+
+Functions:
+
+* transfer()
+* approve()
+* transferFrom()
+* balanceOf()
+
+---
+
+## Contract 2: RewardToken.sol
+
+Purpose:
+ERC20 Token B
+
+Functions:
+
+* transfer()
+* approve()
+* transferFrom()
+* balanceOf()
+
+---
+
+## Contract 3: MiniDEX.sol
+
+Core Functions:
+
+### addLiquidity()
+
+Input:
+
+* Token A Amount
+* Token B Amount
+
+Process:
+
+* Transfer tokens to DEX
+* Increase reserves
+
+Output:
+
+* Liquidity added
+
+---
+
+### removeLiquidity()
+
+Input:
+
+* Liquidity Amount
+
+Process:
+
+* Return proportional tokens
+
+Output:
+
+* Liquidity removed
+
+---
+
+### swap()
+
+Input:
+
+* Token In
+* Amount
+
+Process:
+
+* Calculate output amount
+* Transfer tokens
+
+Output:
+
+* Tokens swapped
+
+---
+
+### getReserves()
+
+Output:
+
+* Token A Reserve
+* Token B Reserve
+
+Purpose:
+Display pool status
+
+---
+
+# Technical Documentation
+
+## Technology Stack
+
+Frontend:
+
+* React.js
+* Ethers.js
+
+Blockchain:
+
+* Solidity
+* MetaMask
+* Remix IDE
+* SCAI Mainnet
+
+Version Control:
+
+* Git
+* GitHub
+
+Deployment:
+
+* Vercel
+
+---
+
+# Security Considerations
+
+1. Input Validation
+2. Access Control
+3. Safe ERC20 Transfers
+4. Reserve Verification
+5. Transaction Confirmation
+
+---
+
+# Workflow Diagrams
+
+## Wallet Connection Workflow
+
+User
+↓
+Open DApp
+↓
+Connect Wallet
+↓
+MetaMask Approval
+↓
+Wallet Connected
+
+---
+
+## Add Liquidity Workflow
+
+User
+↓
+Enter Token Amounts
+↓
+Approve Tokens
+↓
+addLiquidity()
+↓
+Pool Reserves Updated
+
+---
+
+## Token Swap Workflow
+
+User
+↓
+Select Token Pair
+↓
+Enter Amount
+↓
+Approve Transaction
+↓
+swap()
+↓
+Receive Output Tokens
+
+---
+
+## Remove Liquidity Workflow
+
+User
+↓
+Select Liquidity Amount
+↓
+removeLiquidity()
+↓
+Receive Tokens Back
+
+---
+
+# Expected Outcome
+
+The Mini DEX will allow users to:
+
+* Connect Wallet
+* Add Liquidity
+* Remove Liquidity
+* Swap Tokens
+* View Pool Reserves
+
+through decentralized smart contracts deployed on blockchain infrastructure.
