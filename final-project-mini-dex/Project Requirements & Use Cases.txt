@@ -1,0 +1,229 @@
+# Project Requirements & Use Cases
+
+## Selected Final Project
+
+Mini DEX (Decentralized Exchange)
+
+---
+
+## Project Overview
+
+A Mini DEX (Decentralized Exchange) is a blockchain-based application that allows users to trade tokens directly from their wallets without relying on a centralized intermediary. The platform uses smart contracts to manage liquidity pools and facilitate token swaps.
+
+The goal of this project is to develop a simplified decentralized exchange that demonstrates core DeFi concepts including token swapping, liquidity management, and Web3 wallet integration.
+
+---
+
+## Similar Existing Protocols Studied
+
+### 1. Uniswap
+
+Uniswap is one of the most popular decentralized exchanges built on Ethereum.
+
+Key Features:
+
+* Token Swaps
+* Liquidity Pools
+* Automated Market Maker (AMM)
+* Permissionless Trading
+
+Learning:
+
+* Users trade against liquidity pools instead of order books.
+* Smart contracts automatically determine swap prices.
+
+---
+
+### 2. PancakeSwap
+
+PancakeSwap is a decentralized exchange built on BNB Chain.
+
+Key Features:
+
+* Token Swaps
+* Liquidity Pools
+* Yield Farming
+* Staking
+
+Learning:
+
+* Liquidity providers earn rewards for supplying tokens.
+* DEX platforms can integrate additional DeFi services.
+
+---
+
+### 3. SushiSwap
+
+SushiSwap is a community-driven decentralized exchange.
+
+Key Features:
+
+* Token Swaps
+* Liquidity Mining
+* Governance
+
+Learning:
+
+* Community governance can be integrated into DeFi applications.
+* Liquidity incentives help attract users.
+
+---
+
+## Project Requirements
+
+### Functional Requirements
+
+1. Wallet Connection
+
+   * Connect MetaMask wallet
+   * Display connected wallet address
+
+2. Token Management
+
+   * Support two ERC20 tokens
+   * Allow token approvals
+
+3. Liquidity Pool
+
+   * Add liquidity to the pool
+   * Remove liquidity from the pool
+
+4. Token Swapping
+
+   * Swap Token A for Token B
+   * Swap Token B for Token A
+
+5. Pool Information
+
+   * Display token reserves
+   * Display available liquidity
+
+---
+
+### Non-Functional Requirements
+
+Security:
+
+* Secure token transfers
+* Input validation
+* Smart contract best practices
+
+Usability:
+
+* Simple user interface
+* Clear transaction status
+
+Performance:
+
+* Efficient smart contract interactions
+* Responsive frontend design
+
+---
+
+## Use Cases
+
+### Use Case 1: Connect Wallet
+
+Actor:
+User
+
+Flow:
+
+1. Open application
+2. Click Connect Wallet
+3. Approve MetaMask request
+4. Wallet successfully connected
+
+Outcome:
+User gains access to DEX features.
+
+---
+
+### Use Case 2: Add Liquidity
+
+Actor:
+Liquidity Provider
+
+Flow:
+
+1. Select token amounts
+2. Approve tokens
+3. Add liquidity
+
+Outcome:
+Pool reserves increase.
+
+---
+
+### Use Case 3: Swap Tokens
+
+Actor:
+Trader
+
+Flow:
+
+1. Select input token
+2. Enter swap amount
+3. Confirm transaction
+
+Outcome:
+Tokens are exchanged through the liquidity pool.
+
+---
+
+### Use Case 4: Remove Liquidity
+
+Actor:
+Liquidity Provider
+
+Flow:
+
+1. Select liquidity amount
+2. Confirm withdrawal
+
+Outcome:
+User receives tokens back from the pool.
+
+---
+
+## Technology Stack
+
+Blockchain:
+
+* Solidity
+* Remix IDE
+* MetaMask
+* SCAI Mainnet
+
+Frontend:
+
+* React.js
+* Ethers.js
+
+Version Control:
+
+* Git
+* GitHub
+
+Deployment:
+
+* Vercel
+
+---
+
+## Expected Learning Outcomes
+
+* ERC20 Token Development
+* Liquidity Pool Management
+* Automated Market Makers (AMM)
+* Token Swap Mechanisms
+* Smart Contract Security
+* Web3 Integration
+* Decentralized Finance (DeFi)
+* Full DApp Development
+
+---
+
+## Conclusion
+
+The Mini DEX project was selected because it provides practical experience with decentralized finance concepts and combines smart contract development, Web3 integration, liquidity management, and token swapping into a single real-world blockchain application.
