@@ -1,0 +1,184 @@
+# Smart Contract Notes – Mini DEX Project
+
+## 1. DevToken.sol
+
+### What is DevToken?
+
+DevToken (DVT) is an ERC20 token that acts as the first tradable asset within the Mini DEX ecosystem.
+
+### Why is DevToken Used?
+
+The Mini DEX requires at least one token to demonstrate token transfers, liquidity provisioning, and token swapping. DevToken serves as Token A in the liquidity pool.
+
+### Features Implemented
+
+* ERC20 Standard Compliance
+* Token Transfers
+* Token Approvals
+* Balance Tracking
+* Initial Token Minting
+
+### Purpose in Mini DEX
+
+* Used for liquidity provision.
+* Used for token swap operations.
+* Used to test DEX functionality.
+
+### Learning Outcome
+
+Learned how ERC20 tokens are created and managed using OpenZeppelin contracts.
+
+---
+
+## 2. RewardToken.sol
+
+### What is RewardToken?
+
+RewardToken (RWT) is the second ERC20 token used in the Mini DEX ecosystem.
+
+### Why is RewardToken Used?
+
+A DEX requires at least two tokens to perform exchanges. RewardToken acts as Token B and enables token-to-token trading.
+
+### Features Implemented
+
+* ERC20 Standard Compliance
+* Token Transfers
+* Token Approvals
+* Balance Tracking
+* Initial Token Minting
+
+### Purpose in Mini DEX
+
+* Acts as the second asset in the liquidity pool.
+* Enables DVT ↔ RWT swaps.
+* Helps simulate real-world trading scenarios.
+
+### Learning Outcome
+
+Understood how multiple ERC20 assets interact within decentralized finance applications.
+
+---
+
+## 3. MiniDEX.sol
+
+### What is MiniDEX?
+
+MiniDEX is the core smart contract of the project that manages liquidity pools and token exchange operations.
+
+### Why is MiniDEX Used?
+
+Instead of relying on a centralized exchange, users interact directly with this smart contract to trade tokens and manage liquidity.
+
+### Features Implemented
+
+#### addLiquidity()
+
+Purpose:
+Allows users to deposit DevToken and RewardToken into the liquidity pool.
+
+Why Used:
+Liquidity is required for token swaps to occur.
+
+---
+
+#### removeLiquidity()
+
+Purpose:
+Allows users to withdraw tokens from the liquidity pool.
+
+Why Used:
+Liquidity providers must be able to retrieve their deposited assets.
+
+---
+
+#### swapAForB()
+
+Purpose:
+Swaps DevToken for RewardToken.
+
+Why Used:
+Enables token trading functionality.
+
+---
+
+#### swapBForA()
+
+Purpose:
+Swaps RewardToken for DevToken.
+
+Why Used:
+Supports two-way token exchanges.
+
+---
+
+#### getReserves()
+
+Purpose:
+Displays the amount of each token available in the liquidity pool.
+
+Why Used:
+Provides transparency and helps determine pool status.
+
+---
+
+## Contract Interaction Flow
+
+User
+↓
+MetaMask Wallet
+↓
+Approve Tokens
+↓
+MiniDEX Contract
+↓
+Liquidity Pool
+↓
+Token Swap / Liquidity Management
+↓
+Updated Reserves
+
+---
+
+## Why Three Contracts Were Needed
+
+### DevToken.sol
+
+Provides Token A for trading.
+
+### RewardToken.sol
+
+Provides Token B for trading.
+
+### MiniDEX.sol
+
+Acts as the decentralized exchange that manages liquidity and token swaps.
+
+Without DevToken and RewardToken:
+
+* No assets would exist for trading.
+
+Without MiniDEX:
+
+* Tokens could not be exchanged through a decentralized mechanism.
+
+Therefore, all three contracts work together to create a functional decentralized exchange ecosystem.
+
+---
+
+## Overall Project Learning
+
+Through these smart contracts, the following blockchain concepts were implemented and understood:
+
+* ERC20 Token Standards
+* Smart Contract Development
+* Token Transfers
+* Token Approvals
+* Liquidity Pools
+* Decentralized Exchanges (DEX)
+* Token Swapping
+* Reserve Management
+* DeFi Fundamentals
+* Solidity Development
+* OpenZeppelin Libraries
+* MetaMask Interaction
