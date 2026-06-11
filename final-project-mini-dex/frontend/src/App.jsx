@@ -1,11 +1,12 @@
-import ConnectWallet from "./components/ConnectWallet";
+import WalletConnect from "./components/WalletConnect";
 
 function App() {
   return (
-    <div>
+    <>
       <h1>Mini DEX</h1>
-      <ConnectWallet />
-    </div>
+
+      <WalletConnect />
+    </>
   );
 }
 
