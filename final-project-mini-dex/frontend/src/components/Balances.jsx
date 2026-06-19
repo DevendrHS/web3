@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Balances() {
-  const [balance, setBalance] = useState("0");
+  const [balance, ] = useState("0");
 
   useEffect(() => {
     // fetch balances here
